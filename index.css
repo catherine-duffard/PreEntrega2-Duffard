@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin: 0 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+header ul li svg {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+header ul:first-of-type li {
+    font-size: 18px;
+}
+
+header ul:last-of-type li {
+    display: flex;
+    align-items: center;
+}
+
+header ul:last-of-type li svg {
+    fill: currentColor;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.banner {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    background-color: #d3d3d3;
+}
+
+.categories {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 5em 0 5em;
+    gap: 2em;
+}
+
+.categoriesCont{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+.category {
+    width: 20em;
+    text-align: center;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    background-color: #d3d3d3;
+}
+
+.category p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.hamburgerCont {
+    display: none;
+}
+
+
+/* MEDIA QUERIES  */ 
+
+@media only screen and (max-width: 600px) {
+    
+   /* implementamos navar hamburguer mediante media query */ 
+    .widgets{
+        display: none;
+    }
+
+    .hamburgerCont{
+        display: flex;
+    }
+
+    .category{
+        width: 10em;
+    }
+
+}
